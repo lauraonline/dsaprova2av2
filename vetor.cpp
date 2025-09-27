@@ -16,3 +16,9 @@ void preencherVetor (tvetor vetor) {
         cin>>vetor[i];
     }
 }
+
+void troca(int &var1, int &var2) {
+    int temp = var1;
+    var1 = var2;
+    var2 = temp;
+}
