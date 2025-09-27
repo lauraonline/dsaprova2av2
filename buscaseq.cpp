@@ -21,5 +21,10 @@ main() {
     int valor;
     cout<<"Valor a ser buscado:";
     cin>>valor;
-    cout<<valor<<" está no índice "<<buscaSequencial(valor, vetor)+1<<endl;
+    int indice = buscaSequencial(valor, vetor);
+    if (indice != -1) {
+        cout<<valor<<" está no índice "<<indice+1<<endl;        
+    }  else {
+        cout<<valor<<" não foi encontrado no vetor"<<endl;
+    }
 }
